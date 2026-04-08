@@ -1,8 +1,9 @@
-def clean_data(data):
-    # Dummy cleaning
-    return [d for d in data if d is not None]
+def predict_performance(clicks, impressions):
+    if impressions == 0:
+        return 0
+    
+    ctr = clicks / impressions
 
-
-if __name__ == "__main__":
-    sample = [1, None, 2, 3]
-    print(clean_data(sample))
+    if ctr > 0.1:
+        return "High Performance"
+    return "Low Performance"
