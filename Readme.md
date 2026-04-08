@@ -5,3 +5,5 @@ This is a dummy project to practice Git commands.
 ## Features
 - Predict campaign performance
 - Recommend budget changes
+- With a score using dimensions
+- 
